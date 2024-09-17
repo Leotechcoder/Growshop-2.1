@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow - Venta de Semillas y Consultas de Cultivo</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="head">
+            <div class="titulo">
+                <h1>Bienvenido a Nuestro Grow</h1>
+            </div>
+            <div class="cart">
+                <a href="#"><img src="/Imagenes/instagram.svg" alt="Facebook"></a>
+                <a href="#"><img src="/Imagenes/telegram.svg" alt="Telegram"></a>
+            </div>
+            
+        </div>
+        
+        <div id="inicio">
+            <div id="logo">
+                <img id="fiske420" src="/Imagenes/Fiske420.jpeg" alt="">
+            </div>
+            <form>                
+                <input id="buscador" type="text" placeholder="Buscar...">
+                <input id="btnbuscar" type="submit" value="Buscar">
+            </form>
+            <div id="redes">
+                <a href="#"><img src="/Imagenes/cart.svg" alt="Carrito"></a> 
+            </div>
+        </div>
+            
+      <ul>
+        <li><a href="#home" class="nav-link">Inicio</a></li>
+        <li><a href="#semillas" class="nav-link">Semillas</a>
+          <ul class="submenu">
+            <li><a href="#regulares" class="nav-link">Regulares</a></li>
+            <li><a href="#autoflorecientes" class="nav-link">Autoflorecientes</a></li>
+          </ul>
+        </li>
+        <li><a href="#consultas" class="nav-link">Consultas de Cultivo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <p>Explora nuestras semillas y resuelve tus dudas sobre el cultivo</p>
+        <section id="nosotros">
+        <div id="cogollo"></div>
+          <div id="cogollo2"></div>
+        </section>    
+    </section>
+
+    
+
+    <section id="semillas" class="section">
+        <div class="tituloSemillas">
+           <p>Disponemos de una variedad de semillas regulares para todos los gustos</p> 
+        </div>
+        
+            <section id="articulos">
+                <article>
+                    <img src="/Imagenes/blueberry.webp" alt="blueberry">
+                    <h4>BLUEBERRY AUTOFLORECIENTE</h4>
+                    <p>Desde $15500</p>
+                    <button>Seleccionar opciones</button>
+                </article>
+                <article>
+                    <img src="/Imagenes/bubble.webp" alt="bubble">
+                    <h4>Nombre de la semilla</h4>
+                    <p>Aca va la descripcion de la semilla</p>
+                    <button>Seleccionar opciones</button>
+                </article>
+                <article>
+                    <img src="/Imagenes/destroyer.webp" alt="destroyer">
+                    <h4>Nombre de la semilla</h4>
+                    <p>Aca va la descripcion de la semilla</p>
+                    <button>Seleccionar opciones</button>
+                </article>
+                <article>
+                    <img src="/Imagenes/4-OG-Kush-1024x1024-1.webp" alt="4-OG-Kush-1024x1024-1">
+                    <h4>Nombre de la semilla</h4>
+                    <p>Aca va la descripcion de la semilla</p>
+                    <button>Seleccionar opciones</button>
+                </article>
+                <article>
+                    <img src="/Imagenes/gorilla-cookies-autoflower.webp" alt="gorilla-cookies-autoflower">
+                    <h4>Nombre de la semilla</h4>
+                    <p>Aca va la descripcion de la semilla</p>
+                    <button>Seleccionar opciones</button>
+                </article>
+            </section>
+      </div>
+      <div id="autoflorecientes" class="subcategory">
+        <h3>Semillas Autoflorecientes</h3>
+        <p>Nuestras semillas autoflorecientes garantizan un cultivo más rápido y eficiente.</p>
+      </div>
+    </section>
+
+    <section id="consultas" class="section">
+      <h2>Consultas de Cultivo</h2>
+      <p>Aquí puedes encontrar respuestas a las preguntas más frecuentes sobre el cultivo de tus plantas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Grow - Venta de Semillas y Consultas de Cultivo.</p>
+  </footer>
+
+  <script>
+    // Código para el SPA - Navegación
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.querySelectorAll('.section').forEach(section => {
+          section.style.display = 'none';
+        });
+        document.getElementById(targetId).style.display = 'block';
+      });
+    });
+
+    // Mostrar solo la sección de inicio al cargar la página
+    document.getElementById('home').style.display = 'block';
+  </script>
+</body>
+</html>
