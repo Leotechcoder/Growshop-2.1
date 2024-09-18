@@ -28,7 +28,9 @@
     color: var(--color-terciario);
     line-height: 1.6;
   }
-  
+  section{
+    height: 100%;
+  }
   header {
     background-color: var(--color-primario);
   }
@@ -49,13 +51,17 @@
   }
   .cart{
     display: flex;
+    justify-content: center;
     width: 100px;
     gap: 10px;
     background-color: var(--color-primario);
-    color: var(--color-fondo);
-    padding: 5px;
+    padding: 5px 0px;
   }
-  .cart a{
+  
+  .cart img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
     filter: invert(89%) sepia(3%) saturate(1%) hue-rotate(5deg) brightness(95%) contrast(126%);
   }
   #inicio{
