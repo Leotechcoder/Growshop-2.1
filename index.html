@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grow - Venta de Semillas y Consultas de Cultivo</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script defer src="js/index.js"></script>
 </head>
 <body>
   <header>
@@ -14,22 +15,31 @@
                 <h1>Bienvenido a Nuestro Grow</h1>
             </div>
             <div class="cart">
-                <a href="#"><img src="/Imagenes/instagram.svg" alt="Facebook"></a>
-                <a href="#"><img src="/Imagenes/telegram.svg" alt="Telegram"></a>
+                <a href="#"><img src="Imagenes/Redes/PNG/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Imagenes/Redes/PNG/telegram.png" alt="Telegram"></a>
             </div>
             
         </div>
         
         <div id="inicio">
             <div id="logo">
-                <img id="fiske420" src="/Imagenes/Fiske420.jpeg" alt="">
+                <img id="fiske420" src="/Imagenes/Fiske420.jpeg" alt="logo">
             </div>
-            <form>                
+            <form id="formsearch">                
                 <input id="buscador" type="text" placeholder="Buscar...">
+                <!--Aca voy a agregar un select para elegir categoria a buscar-->
+                <select id="categorias">
+                    <option value="" disabled selected>Todas las categorias</option>
+                    <option value="regulares">Regulares</option>
+                    <option value="autoflorecientes">Autoflorecientes</option>
+                </select>
+                
+                <!--Aca voy a agregar un boton para buscar-->
                 <input id="btnbuscar" type="submit" value="Buscar">
+
             </form>
             <div id="redes">
-                <a href="#"><img src="/Imagenes/cart.svg" alt="Carrito"></a> 
+                <a href="#"><img src="Imagenes/Redes/PNG/shopping_bag.png" alt="Carrito"></a> 
             </div>
         </div>
             

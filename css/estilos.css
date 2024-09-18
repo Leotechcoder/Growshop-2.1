@@ -1,3 +1,4 @@
+
 /* Definición de colores */
 :root {
     --color-primario: #1b221b; /* Verde principal */
@@ -10,8 +11,7 @@
     --color-sexto: #C0C0C0; /* Gris oscuro */
     --color-septimo: #A9A9A9; /* Gris tenue */
     --color-octavo: #808080; /* Gris oscuro claro */
-    --color-noveno: rgb(5, 5, 5); /* Gris tenue claro */
-  
+    --color-noveno: rgb(5, 5, 5); /* Gris tenue claro */  
     --color-texto: #FFFFFF; /* Texto blanco */
     --color-fondo: #F0F0F0; /* Fondo claro */
   }
@@ -48,8 +48,11 @@
     margin-left: 20px;
   }
   .cart{
+    display: flex;
     width: 100px;
-    background-color: var(--color-secundario);
+    gap: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
     padding: 5px;
   }
   .cart a{
@@ -65,27 +68,34 @@
   }
   #logo{
     margin-left: 20px;
-    width: 250px;
+    width: 200px;
     align-content: center;
   }
 
   #fiske420{
     width: 100%;
     height: 80px;
-    background-image: url('https://i.ibb.co/z1q6wG3/fiske420.jpg');
+    background-image: url(/Imagenes/Fiske420.jpeg);
     background-size: contain;
     background-position: center;
-    transition: background-color 0.3s ease;
   }
 
   #buscador{
-    width: 260px;
+    width: 200px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     outline: none;
     transition: background-color 0.3s ease;
   }
+  #categorias{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+
   #btnbuscar{
     background-color: #1b221b;
     color: #F0F0F0;
@@ -228,7 +238,6 @@
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--color-primario);
-    margin-bottom: 10px;
     text-align: center;
   }
   article p{
