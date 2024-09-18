@@ -6,6 +6,7 @@
         width: 150px;
     }
 }
+
 @media (max-width: 680px) {
     #divLogo{
         width: 100%;
@@ -19,6 +20,7 @@
         display: none;
     }
     .head{
+        height: 100px;
         background-color: var(--color-fondo);
     }
     #logo{
@@ -30,9 +32,54 @@
     #buscador{
         width: 200px;
     }
+
 }
 
 @media (max-width:500px) {
+    #nav{
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--color-fondo);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    #nav-bar-btn{
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        color: var(--color-primario);
+    }
+    #nav-bar-ul{
+        list-style-type: none;
+        left: 0px;
+        top: 155px;
+        height: 150px;
+        width: 100%;
+        background-color: var(--color-fondo);
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+    }
+    #nav-bar-ul li{
+        text-align: center;
+    }
+    #nav-bar-ul li a{
+        color: var(--color-primario);
+    }
+    #divOfertas{
+        align-content: center;
+    }
+    #divOfertas>a{
+        color: var(--color-primario);
+    }
+    #inicio{
+        height: 55px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    #redes a{
+        display: flex;
+    }
     #categorias{
         display: none;
     }
