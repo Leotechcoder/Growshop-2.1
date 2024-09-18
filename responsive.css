@@ -18,6 +18,9 @@
     .cart{
         display: none;
     }
+    .head{
+        background-color: var(--color-fondo);
+    }
     #logo{
         display: none;
     }

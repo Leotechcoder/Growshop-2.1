@@ -11,7 +11,7 @@ window.addEventListener('resize', () => {
 
 /*Ahora voy a escribir el codigo para cambiar la imagen de #logo de donde esta y lo voy a insertar en el div con la clase "titulo" dentro del document */
 
-    if(window.innerWidth < 680){
+    if(window.innerWidth = 680){
 
         const titulo = document.querySelector('.titulo');
         titulo.innerHTML = "";
